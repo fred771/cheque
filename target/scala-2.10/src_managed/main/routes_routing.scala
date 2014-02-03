@@ -1,6 +1,6 @@
-// @SOURCE:/home/selas/cheque/conf/routes
+// @SOURCE:/Applications/play/cheque/conf/routes
 // @HASH:9c24f09449355737d0bfbe9ca53280febbd777c7
-// @DATE:Mon Feb 03 09:52:55 CET 2014
+// @DATE:Mon Feb 03 10:30:09 CET 2014
 
 
 import play.core._

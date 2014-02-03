@@ -15,6 +15,30 @@ public class Lettre{
 	public String en_lettre(){
 		String res = "test non terminé" ;
 		
+		if (valeur == 10)
+			res = "dix" ;
+		
+		if (valeur == 9) 
+			res = "neuf" ;
+
+		if (valeur == 8)
+			res = "huit" ;
+		
+		if (valeur == 7) 
+			res = "sept" ;
+
+		if (valeur == 6)
+			res = "six" ;
+		
+		if (valeur == 5) 
+			res = "cinq" ;
+
+		if (valeur == 4)
+			res = "quatre" ;
+		
+		if (valeur == 3) 
+			res = "trois" ;
+
 		if (valeur == 2)
 			res = "deux" ;
 		

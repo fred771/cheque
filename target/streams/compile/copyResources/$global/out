@@ -1,3 +1,3 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/home/selas/cheque/conf/routes,/home/selas/cheque/target/scala-2.10/classes/routes)[0m
-[0m[[0mdebug[0m] [0m	(/home/selas/cheque/conf/application.conf,/home/selas/cheque/target/scala-2.10/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Applications/play/cheque/conf/application.conf,/Applications/play/cheque/target/scala-2.10/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Applications/play/cheque/conf/routes,/Applications/play/cheque/target/scala-2.10/classes/routes)[0m

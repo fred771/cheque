@@ -48,6 +48,14 @@ public class ApplicationTest {
     public void lettre(){
         assert_en_lettre(1,"un");
         assert_en_lettre(2,"deux");
+        assert_en_lettre(3,"trois");
+        assert_en_lettre(4,"quatre");
+        assert_en_lettre(5,"cinq");
+        assert_en_lettre(6,"six");
+        assert_en_lettre(7,"sept");
+        assert_en_lettre(8,"huit");
+        assert_en_lettre(9,"neuf");
+        assert_en_lettre(10,"dix");
     }
 
 }
