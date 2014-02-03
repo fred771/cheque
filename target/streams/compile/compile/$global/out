@@ -16,10 +16,10 @@
 [0m[[0minfo[0m] [0mCompiling 1 Java source to /Applications/play/cheque/target/scala-2.10/classes...[0m
 [0m[[0mdebug[0m] [0mAttempting to call javac directly...[0m
 [0m[[0mdebug[0m] [0mcom.sun.tools.javac.Main not found with appropriate method signature; forking javac instead[0m
-[0m[[0mdebug[0m] [0mForking javac: javac @/var/folders/5j/kc6tzvxs5hx1k28ypdvgfth00000gn/T/sbt_c1ccb917/argfile[0m
+[0m[[0mdebug[0m] [0mForking javac: javac @/var/folders/5j/kc6tzvxs5hx1k28ypdvgfth00000gn/T/sbt_ec320521/argfile[0m
 [0m[[0mdebug[0m] [0mjavac returned exit code: 0[0m
-[0m[[0mdebug[0m] [0mJava compilation took 1.910998 s[0m
-[0m[[0mdebug[0m] [0mJava analysis took 0.233526 s[0m
+[0m[[0mdebug[0m] [0mJava compilation took 2.75886 s[0m
+[0m[[0mdebug[0m] [0mJava analysis took 0.3785 s[0m
 [0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set()[0m
 [0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
 [0m[[0mdebug[0m] [0mNew invalidations:[0m

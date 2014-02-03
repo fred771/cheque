@@ -56,6 +56,14 @@ public class ApplicationTest {
         assert_en_lettre(8,"huit");
         assert_en_lettre(9,"neuf");
         assert_en_lettre(10,"dix");
+        assert_en_lettre(11,"onze");
+        assert_en_lettre(12,"douze");
+        assert_en_lettre(13,"treize");
+        assert_en_lettre(14,"quatorze");
+        assert_en_lettre(15,"quinze");
+        assert_en_lettre(16,"seize");
+        assert_en_lettre(20,"vingt");
+        
     }
 
 }
