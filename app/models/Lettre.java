@@ -13,11 +13,13 @@ public class Lettre{
 	}	
 
 	public String en_lettre(){
-		String res = "" ;
+		String res = "test non terminé" ;
+		
+		if (valeur == 2)
+			res = "deux" ;
+		
 		if (valeur == 1) 
 			res = "un" ;
-		else
-			res = "test non terminé" ;
 
 		return res;
 	}
