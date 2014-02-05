@@ -15,6 +15,30 @@ public class Lettre{
 	public String en_lettre(){
 		String res = "test non terminé" ;
 		
+		if (valeur == 100)
+			res = "cent" ;
+
+		if (valeur == 90)
+			res = "quatre-vingt-dix" ;
+		
+		if (valeur == 80) 
+			res = "quatre-vingt" ;
+
+		if (valeur == 70)
+			res = "soixante-dix" ;
+		
+		if (valeur == 60) 
+			res = "soixante" ;
+
+		if (valeur == 50)
+			res = "cinquante" ;
+		
+		if (valeur == 40) 
+			res = "quarante" ;
+
+		if (valeur == 30)
+			res = "trente" ;
+
 		if (valeur == 20)
 			res = "vingt" ;
 		
@@ -67,5 +91,6 @@ public class Lettre{
 			res = "un" ;
 
 		return res;
+
 	}
 }

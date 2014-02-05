@@ -63,7 +63,14 @@ public class ApplicationTest {
         assert_en_lettre(15,"quinze");
         assert_en_lettre(16,"seize");
         assert_en_lettre(20,"vingt");
-        
+        assert_en_lettre(30,"trente");
+        assert_en_lettre(40,"quarante");
+        assert_en_lettre(50,"cinquante");
+        assert_en_lettre(60,"soixante");
+        assert_en_lettre(70,"soixante-dix");
+        assert_en_lettre(80,"quatre-vingt");
+        assert_en_lettre(90,"quatre-vingt-dix");
+        assert_en_lettre(100,"cent");        
     }
 
 }
