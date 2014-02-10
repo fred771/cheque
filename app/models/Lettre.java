@@ -12,6 +12,43 @@ public class Lettre{
 		this.valeur = nbre ;
 	}	
 
+	private static final String[] dizaine = {
+		"",
+		"",
+		"vingt",
+		"trente",
+		"quarante",
+		"cinquante",
+		"soixante",
+		"soixante",
+		"quatre-vingt",
+		"quatre-vingt"
+  	};
+
+
+	private static final String[] unite = {
+		"",
+		"un",
+		"deux",
+		"trois",
+		"quatre",
+		"cinq",
+		"six",
+		"sept",
+		"huit",
+		"neuf",
+		"dix",
+		"onze",
+		"douze",
+		"treize",
+		"quatorze",
+		"quinze",
+		"seize",
+		"dix-sept",
+		"dix-huit",
+		"dix-neuf"
+	};
+
 	public String en_lettre(){
 		String res = "test non terminé" ;
 		

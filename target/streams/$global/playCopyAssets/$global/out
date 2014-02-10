@@ -1,4 +1,4 @@
 [0m[[0mdebug[0m] [0mCopy play resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/home/selas/cheque/public/stylesheets/main.css,/home/selas/cheque/target/scala-2.10/classes/public/stylesheets/main.css)[0m
-[0m[[0mdebug[0m] [0m	(/home/selas/cheque/public/javascripts/jquery-1.9.0.min.js,/home/selas/cheque/target/scala-2.10/classes/public/javascripts/jquery-1.9.0.min.js)[0m
-[0m[[0mdebug[0m] [0m	(/home/selas/cheque/public/images/favicon.png,/home/selas/cheque/target/scala-2.10/classes/public/images/favicon.png)[0m
+[0m[[0mdebug[0m] [0m	(/home/utilsio/cheque/public/javascripts/jquery-1.9.0.min.js,/home/utilsio/cheque/target/scala-2.10/classes/public/javascripts/jquery-1.9.0.min.js)[0m
+[0m[[0mdebug[0m] [0m	(/home/utilsio/cheque/public/stylesheets/main.css,/home/utilsio/cheque/target/scala-2.10/classes/public/stylesheets/main.css)[0m
+[0m[[0mdebug[0m] [0m	(/home/utilsio/cheque/public/images/favicon.png,/home/utilsio/cheque/target/scala-2.10/classes/public/images/favicon.png)[0m

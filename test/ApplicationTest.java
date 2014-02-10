@@ -70,7 +70,7 @@ public class ApplicationTest {
         assert_en_lettre(70,"soixante-dix");
         assert_en_lettre(80,"quatre-vingt");
         assert_en_lettre(90,"quatre-vingt-dix");
-        assert_en_lettre(100,"cent");        
+        assert_en_lettre(100,"cent");
     }
 
 }
