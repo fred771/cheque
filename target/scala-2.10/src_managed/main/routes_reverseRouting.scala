@@ -1,6 +1,6 @@
 // @SOURCE:/home/utilsio/cheque/conf/routes
-// @HASH:0e2a8d881ff31e25db235e472a5c366a2cb67384
-// @DATE:Thu Feb 13 10:08:11 CET 2014
+// @HASH:27ba778feb5831f6f9c36a0a38737b470b0085f3
+// @DATE:Thu Feb 13 10:52:48 CET 2014
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -13,17 +13,17 @@ import play.libs.F
 import Router.queryString
 
 
-// @LINE:19
-// @LINE:18
-// @LINE:9
+// @LINE:15
+// @LINE:11
+// @LINE:10
 // @LINE:6
 package controllers {
 
-// @LINE:9
+// @LINE:15
 class ReverseAssets {
     
 
-// @LINE:9
+// @LINE:15
 def at(file:String): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
 }
@@ -32,18 +32,18 @@ def at(file:String): Call = {
 }
                           
 
-// @LINE:19
-// @LINE:18
+// @LINE:11
+// @LINE:10
 class ReverseConvEnLettre {
     
 
-// @LINE:18
+// @LINE:10
 def blank(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "lettre")
 }
                                                 
 
-// @LINE:19
+// @LINE:11
 def submit(): Call = {
    Call("POST", _prefix + { _defaultPrefix } + "lettre")
 }
@@ -68,17 +68,17 @@ def index(): Call = {
                   
 
 
-// @LINE:19
-// @LINE:18
-// @LINE:9
+// @LINE:15
+// @LINE:11
+// @LINE:10
 // @LINE:6
 package controllers.javascript {
 
-// @LINE:9
+// @LINE:15
 class ReverseAssets {
     
 
-// @LINE:9
+// @LINE:15
 def at : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Assets.at",
    """
@@ -92,12 +92,12 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
-// @LINE:19
-// @LINE:18
+// @LINE:11
+// @LINE:10
 class ReverseConvEnLettre {
     
 
-// @LINE:18
+// @LINE:10
 def blank : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.ConvEnLettre.blank",
    """
@@ -108,7 +108,7 @@ def blank : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:19
+// @LINE:11
 def submit : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.ConvEnLettre.submit",
    """
@@ -143,18 +143,18 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
-// @LINE:19
-// @LINE:18
-// @LINE:9
+// @LINE:15
+// @LINE:11
+// @LINE:10
 // @LINE:6
 package controllers.ref {
 
 
-// @LINE:9
+// @LINE:15
 class ReverseAssets {
     
 
-// @LINE:9
+// @LINE:15
 def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.at(path, file), HandlerDef(this, "controllers.Assets", "at", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
 )
@@ -163,18 +163,18 @@ def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.
 }
                           
 
-// @LINE:19
-// @LINE:18
+// @LINE:11
+// @LINE:10
 class ReverseConvEnLettre {
     
 
-// @LINE:18
+// @LINE:10
 def blank(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.ConvEnLettre.blank(), HandlerDef(this, "controllers.ConvEnLettre", "blank", Seq(), "GET", """ Convertisseur de nombre romain en nombre décimal""", _prefix + """lettre""")
 )
                       
 
-// @LINE:19
+// @LINE:11
 def submit(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.ConvEnLettre.submit(), HandlerDef(this, "controllers.ConvEnLettre", "submit", Seq(), "POST", """""", _prefix + """lettre""")
 )

@@ -5,16 +5,11 @@
 # Home page
 GET     /                           controllers.Application.index()
 
-# Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
-
-
-
-
-
-
 
 # Convertisseur de nombre romain en nombre décimal
-GET	/lettre		    controllers.ConvEnLettre.blank()
+GET		/lettre		    controllers.ConvEnLettre.blank()
 POST	/lettre		    controllers.ConvEnLettre.submit()
 
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)

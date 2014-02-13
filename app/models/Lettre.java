@@ -64,6 +64,35 @@ public class Lettre{
 	    default:
 	    }
 
+
+	    // Mise en place des séparateurs "-" "et"  ""
+	    String laLiaison = "";
+	    if (laDizaine > 1) {
+	      laLiaison = "-";
+	    }
+	    // cas particuliers
+	    switch (lUnite) {
+	    case 0:
+	      laLiaison = "";
+	      break;
+	    case 1 : 
+	      if (laDizaine == 8) {//81
+	        laLiaison = "-";
+	      }
+	      else {//21, 31, 41, 51, 61, 71
+	        laLiaison = " et ";
+	      }
+	      break;
+	    case 11 :
+	      if (laDizaine==7) {
+	        laLiaison = " et ";
+	      }
+	      break;
+	    default:
+	    }
+
+
+
 	    // dizaines en lettres
 	    switch (laDizaine) {
 	    case 0:
@@ -75,13 +104,23 @@ public class Lettre{
 	      }
 	      else {
 	        resultat = dizaine[laDizaine] 
-	                                + "" + unite[lUnite];
+	                   	+ laLiaison 
+	                   	+ unite[lUnite];
 	      }
 	      break;
 	    default :
-	      resultat = dizaine[laDizaine] 
-	                              + "" + unite[lUnite];
+	      	resultat = dizaine[laDizaine] 
+	                 	+ laLiaison 
+	                 	+ unite[lUnite];
 	    }
+
+
+
+	    //Pour 0 = zero
+	    if(number==0){
+	    	resultat="zero";
+	    }
+
 	    return resultat;
 	}
 

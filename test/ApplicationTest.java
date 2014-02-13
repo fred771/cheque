@@ -83,6 +83,8 @@ public class ApplicationTest {
         assert_en_lettre_second(70,"soixante-dix");
         assert_en_lettre_second(90,"quatre-vingt-dix");
         assert_en_lettre_second(21,"vingt et un");
+        assert_en_lettre_second(0,"zero");
+        
     }
 
 }

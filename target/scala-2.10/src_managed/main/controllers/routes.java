@@ -1,6 +1,6 @@
 // @SOURCE:/home/utilsio/cheque/conf/routes
-// @HASH:0e2a8d881ff31e25db235e472a5c366a2cb67384
-// @DATE:Thu Feb 13 10:08:11 CET 2014
+// @HASH:27ba778feb5831f6f9c36a0a38737b470b0085f3
+// @DATE:Thu Feb 13 10:52:48 CET 2014
 
 package controllers;
 
