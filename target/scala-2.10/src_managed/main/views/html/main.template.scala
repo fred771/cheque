@@ -20,13 +20,13 @@ import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 import views.html._
 /**/
-object main extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template2[String,Html,play.api.templates.HtmlFormat.Appendable] {
+object main extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template3[Html,String,Html,play.api.templates.HtmlFormat.Appendable] {
 
     /**/
-    def apply/*1.2*/(title: String)(content: Html):play.api.templates.HtmlFormat.Appendable = {
+    def apply/*1.2*/(title: Html, nav: String = "")(content: Html):play.api.templates.HtmlFormat.Appendable = {
         _display_ {
 
-Seq[Any](format.raw/*1.32*/("""
+Seq[Any](format.raw/*1.48*/("""
 
 <!DOCTYPE html>
 
@@ -55,7 +55,7 @@ Seq[Any](format.raw/*1.32*/("""
 			
             <footer>
                 <p>
-                    <a href="http://www.playframework.com">www.playframework.com</a>
+                    Dubois Fred, Sélas Estelle
                 </p>
             </footer>
 
@@ -65,19 +65,19 @@ Seq[Any](format.raw/*1.32*/("""
 """))}
     }
     
-    def render(title:String,content:Html): play.api.templates.HtmlFormat.Appendable = apply(title)(content)
+    def render(title:Html,nav:String,content:Html): play.api.templates.HtmlFormat.Appendable = apply(title,nav)(content)
     
-    def f:((String) => (Html) => play.api.templates.HtmlFormat.Appendable) = (title) => (content) => apply(title)(content)
+    def f:((Html,String) => (Html) => play.api.templates.HtmlFormat.Appendable) = (title,nav) => (content) => apply(title,nav)(content)
     
     def ref: this.type = this
 
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Feb 13 10:47:38 CET 2014
+                    DATE: Thu Feb 13 13:14:54 CET 2014
                     SOURCE: /home/utilsio/cheque/app/views/main.scala.html
-                    HASH: 747a2f90e9f3042e2ce2184fabda1415cdca810e
-                    MATRIX: 778->1|902->31|990->84|1016->89|1113->151|1127->157|1187->196|1278->252|1292->258|1347->292|1444->353|1459->359|1513->391|1574->416|1589->422|1656->467|1904->679|1931->684|2101->818|2130->825
+                    HASH: b9d9acb42490c48d1754343bd3517515c59b24a9
+                    MATRIX: 783->1|923->47|1011->100|1037->105|1134->167|1148->173|1208->212|1299->268|1313->274|1368->308|1465->369|1480->375|1534->407|1595->432|1610->438|1677->483|1925->695|1952->700|2122->834|2151->841
                     LINES: 26->1|29->1|35->7|35->7|36->8|36->8|36->8|37->9|37->9|37->9|38->10|38->10|38->10|39->11|39->11|39->11|46->18|46->18|51->23|51->23
                     -- GENERATED --
                 */
