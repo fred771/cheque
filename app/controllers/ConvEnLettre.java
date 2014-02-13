@@ -37,7 +37,7 @@ public class ConvEnLettre extends Controller {
         } 
         else {
 	    Lettre n = formulaire_plein.get();
-            return ok(form_avec.render(form(Lettre.class), n.valeur, n.ZeroACent()));
+            return ok(form_avec.render(form(Lettre.class), n.valeur, n.CentAMille()));
         }
     }
 

@@ -12,6 +12,20 @@ public class Lettre{
 		this.valeur = nbre ;
 	}	
 
+	private static final String[] centaine = {
+	    "",
+	    "cent",
+	    "deux",
+	    "trois",
+	    "quatre",
+	    "cinq",
+	    "six",
+	    "sept",
+	    "huit",
+	    "neuf",
+	    "dix"
+  	};
+
 	private static final String[] dizaine = {
 		"",
 		"",
@@ -125,7 +139,47 @@ public class Lettre{
 	}
 
 
-	/*public String en_lettre(){
+
+	public String CentAMille() {
+
+	int number = valeur;
+
+    int lesCentaines = number / 100;
+    int leReste = number % 100;
+    valeur=leReste;
+    String sReste = ZeroACent();
+
+    String resultat;
+    switch (lesCentaines) {
+    case 0:
+      resultat = sReste;
+      break;
+    case 1 :
+      if (leReste > 0) {
+        resultat = "cent " + sReste;
+      }
+      else {
+        resultat = "cent";
+      }
+      break;
+    default :
+      if (leReste > 0) {
+        resultat = centaine[lesCentaines] + " cent " + sReste;
+      }
+      else {
+        resultat = centaine[lesCentaines] + " cents";
+      }
+    }
+
+    //Pour 0 = zero
+    if(number==1000){
+    	resultat="mille";
+    }
+    return resultat;
+  }
+
+
+	public String en_lettre(){
 		String res = "test non terminé" ;
 		
 		if (valeur == 100)
@@ -205,5 +259,5 @@ public class Lettre{
 
 		return res;
 
-	}*/
+	}
 }

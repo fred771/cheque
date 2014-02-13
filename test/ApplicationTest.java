@@ -27,13 +27,13 @@ import models.Lettre;
 */
 public class ApplicationTest {
 
-   /* void assert_en_lettre(int d, String r) {
+    void assert_en_lettre(int d, String r) {
         assertThat(new Lettre(d).en_lettre()).isEqualTo(r);
-    }*/
+    }
 
 
-    void assert_en_lettre_second(int d, String r) {
-        assertThat(new Lettre(d).ZeroACent()).isEqualTo(r);
+    void assert_en_lettre_second(int d, String r) {        
+        assertThat(new Lettre(d).CentAMille()).isEqualTo(r);
     }
 
 
@@ -52,7 +52,7 @@ public class ApplicationTest {
 
     @Test
     public void lettre(){
-        /*assert_en_lettre(1,"un");
+        assert_en_lettre(1,"un");
         assert_en_lettre(2,"deux");
         assert_en_lettre(3,"trois");
         assert_en_lettre(4,"quatre");
@@ -76,7 +76,7 @@ public class ApplicationTest {
         assert_en_lettre(70,"soixante-dix");
         assert_en_lettre(80,"quatre-vingt");
         assert_en_lettre(90,"quatre-vingt-dix");
-        assert_en_lettre(100,"cent");*/
+        assert_en_lettre(100,"cent");
 
 
         assert_en_lettre_second(10,"dix");
@@ -84,7 +84,11 @@ public class ApplicationTest {
         assert_en_lettre_second(90,"quatre-vingt-dix");
         assert_en_lettre_second(21,"vingt et un");
         assert_en_lettre_second(0,"zero");
-        
+        assert_en_lettre_second(200,"deux cents");
+        assert_en_lettre_second(251,"deux cent cinquante et un");
+
+
+
     }
 
 }
