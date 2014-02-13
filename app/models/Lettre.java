@@ -6,7 +6,7 @@ import play.data.validation.Constraints.*;
 
 public class Lettre{
 	@Required
-	public int valeur ;
+	public int valeur=0 ;
 	public Lettre() {}
 	public Lettre(int nbre){
 		this.valeur = nbre ;
@@ -49,7 +49,44 @@ public class Lettre{
 		"dix-neuf"
 	};
 
-	public String en_lettre(){
+	public String ZeroACent() {
+		int number = valeur;
+	    int laDizaine = number / 10;
+	    int lUnite = number % 10;
+	    String resultat = "";
+
+	    switch (laDizaine) { //Pour 10, 70 et 90
+	    case 1 :
+	    case 7 :
+	    case 9 :
+	      lUnite = lUnite + 10;
+	      break;
+	    default:
+	    }
+
+	    // dizaines en lettres
+	    switch (laDizaine) {
+	    case 0:
+	      resultat = unite[lUnite];
+	      break;
+	    case 8 :
+	      if (lUnite == 0) {
+	        resultat = dizaine[laDizaine];
+	      }
+	      else {
+	        resultat = dizaine[laDizaine] 
+	                                + "" + unite[lUnite];
+	      }
+	      break;
+	    default :
+	      resultat = dizaine[laDizaine] 
+	                              + "" + unite[lUnite];
+	    }
+	    return resultat;
+	}
+
+
+	/*public String en_lettre(){
 		String res = "test non terminé" ;
 		
 		if (valeur == 100)
@@ -129,5 +166,5 @@ public class Lettre{
 
 		return res;
 
-	}
+	}*/
 }
